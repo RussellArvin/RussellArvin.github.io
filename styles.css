@@ -1,0 +1,590 @@
+/*
+ Author:Russell
+ Class:DIT/FT/1A/03
+ Admission Number: 1804515
+*/
+ 
+ html, body {
+    /* CSS Reset, overflow-x to prevent vertical scrolling */
+     width: 100%;
+     height: 100%;
+     margin: 0px;
+     padding: 0px;
+     overflow-x:hidden;
+}
+ section {
+     overflow:hidden;
+}
+/* font imports */
+ @font-face {
+     font-family: BebasNeue;
+     src: url(fonts/BebasNeue-Regular.otf);
+}
+ @font-face {
+     font-family: MaiandraGD;
+     src: url(fonts/Maiandra-GD.ttf);
+}
+/* nav styles */
+ nav {
+     background-color:white;
+     display:grid;
+     grid-template-areas:'img ul ul';
+     margin-bottom:0;
+     width:100%;
+     z-index:3;
+}
+ nav img{
+     height:4.5em;
+     grid-area: img;
+     margin-left:1.5rem;
+}
+ nav ul{
+     text-align:right;
+     margin-right:1rem;
+     margin:auto 3rem auto 0;
+     grid-area: ul;
+}
+ nav li{
+     display:inline-block;
+     font-family: BebasNeue;
+     font-size:3.3rem;
+    /* Animation css */
+     -webkit-transition: all 0.7s ease;
+     -moz-transition: all 0.7s ease;
+     -o-transition: all 0.7s ease;
+     -ms-transition: all 0.7s ease;
+}
+ nav a{
+     color:black;
+     text-decoration:none;
+     padding-left:1.5rem;
+}
+ nav li:hover {
+     transform: scale(1.2);
+}
+ nav i {
+     display:none;
+}
+ #menu {
+     display:none;
+}
+ .slicknav_nav {
+     font-family:BebasNeue;
+}
+/* Header styles */
+ header {
+     background-color:#e6284a;
+}
+ header .container {
+     position:relative;
+     text-align:center;
+}
+ header .container img{
+     height:40rem;
+     margin-right:auto;
+     margin-left:auto;
+     display:block;
+}
+ header p {
+     font-family:BebasNeue;
+     font-size:4rem;
+     text-align:center;
+     color:white;
+     letter-spacing:0.5rem;
+     margin:0;
+     padding-top:2rem;
+}
+ header .banner {
+     width:100%;
+     background-color:black;
+     height:6em;
+     position: absolute;
+     top: 65%;
+     -ms-transform: skewY(170deg);
+    /* IE 9 */
+     -webkit-transform: skewY(170deg);
+    /* Safari */
+     transform: skewY(170deg);
+     box-shadow: 0px 10px rgba(0,0,0,0.5);
+}
+ header .banner span{
+     font-size:5em;
+     color:white;
+     font-family:Lobster;
+     vertical-align: middle;
+     letter-spacing:0.3rem;
+}
+ header .wrapper img {
+     width:101%;
+     margin-bottom:-6px;
+}
+/* About us styles */
+ #aboutus{
+     background-color:white;
+}
+ #aboutus h2 {
+     font-family:Lobster;
+     text-align:center;
+     padding-top:2rem;
+     font-size:6rem;
+     background: -webkit-linear-gradient(#f3511e, #e6284a);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     margin:0;
+}
+ #aboutus .container{
+     display:grid;
+     grid-template-areas:'paragraph paragraph aboutusimg' 
+}
+ #aboutus p {
+     grid-area:paragraph;
+     margin:auto;
+     padding-left:7rem;
+     padding-right:5rem;
+     font-size:2.4em;
+     font-family: MaiandraGD;
+     color:#4d4d4d;
+}
+ #aboutus p:first-letter {
+     font-size:3em;
+}
+ #aboutus.container img {
+     grid-area:aboutusimg;
+     margin-right:auto;
+     margin-left:auto;
+}
+ #aboutus img{
+     width:100%;
+}
+/* award styles */
+ #awards {
+     background: -webkit-linear-gradient(#f3511e, #e6284a);
+     margin-top:-6px;
+}
+ #awards .container {
+     display: grid;
+     grid-template-columns: auto auto;
+}
+ #awards h2, #team h2, #careers h2, #contact h2, #food h2 {
+     font-family:Lobster;
+     text-align:center;
+     font-size:6rem;
+     color:white;
+     margin:0;
+}
+ #awards p {
+     color:white;
+     font-size:2rem;
+     text-align:center;
+     padding-bottom:1.5rem;
+     font-family:MaiandraGD;
+}
+ #awards figure{
+    /* Centering the awards in the awards section */
+     margin:auto;
+     padding-bottom:5.6rem;
+}
+ #awards img {
+    /* Setting a size for the image, and adding a rounded edge to the image for aesthetic appeal */
+     width: 17rem;
+     height: 17rem;
+     margin: 0 2rem;
+     border: 6px hidden white;
+     border-radius: 26%;
+}
+/* Footer styles */
+ footer {
+     margin-top:0;
+     background-color:#e6284a;
+     display:grid;
+     grid-template-rows: auto;
+     grid-template-areas: "footerh2 footerh2" "information map" "socialmedia copyright";
+}
+ footer h2 {
+     color:white;
+     font-family:Lobster;
+     font-size:6rem;
+     text-align:center;
+     grid-area:footerh2;
+     padding-top:2rem;
+}
+ footer .information {
+     grid-area:information;
+     margin-top:0;
+     text-align:right;
+}
+ footer address{
+     font-family:BebasNeue;
+     color:white;
+     font-size:4.5rem;
+     padding-right:2.5rem;
+     margin-top:0;
+     line-height:0.95;
+}
+ footer .information p, footer .information span{
+     font-family:BebasNeue;
+     color:white;
+     font-size:3rem;
+     padding-right:2.5rem;
+     margin-top:0;
+     margin-bottom:0;
+}
+ footer .information span {
+     margin-top:0;
+     font-size:2rem;
+}
+ footer a {
+     text-decoration:none;
+     color:white;
+}
+ footer iframe{
+     grid-area:map;
+     height:20rem;
+     width:25rem;
+}
+ footer .socialmedia {
+     grid-area:socialmedia;
+     padding-left:0.5rem;
+     margin:0;
+     padding-top:1rem;
+}
+ footer .socialmedia i {
+     font-size:3.6rem;
+     color:white;
+     padding-left:0.5rem;
+    /* Animation css */
+     -webkit-transition: all 0.7s ease;
+     -moz-transition: all 0.7s ease;
+     -o-transition: all 0.7s ease;
+     -ms-transition: all 0.7s ease;
+}
+ footer .socialmedia i:hover{
+     transform: scale(1.2);
+}
+ footer .copyright {
+     grid-area:copyright;
+     text-align:right;
+     padding-top:1rem;
+}
+ footer .copyright p, footer .copyright span, footer .copyright button {
+     font-family:MaiandraGD;
+     color:white;
+     font-size:1rem;
+     padding-right:0.5rem;
+     margin:0;
+     background:transparent;
+     border:0;
+}
+/* Meet the team styles */
+ #team, #careers, #contact, #food{
+     background: -webkit-linear-gradient(#f3511e, #e6284a);
+}
+ #team .wrapper, #food .wrapper {
+     display:grid;
+     grid-template-columns:auto auto auto;
+}
+ #team .container, #food .container {
+     padding-top:6rem;
+}
+ #team img, #food img{
+     display:block;
+     width:16.5rem;
+     height:16.5rem;
+     border-radius:50%;
+     margin:auto;
+}
+ #team i {
+     color:white;
+     font-size:800%;
+     position:fixed;
+     display:none;
+}
+ #team p, #food p {
+     font-size:2rem;
+     color:white;
+     font-family:Maiandra-GD;
+     padding-left:6rem;
+     margin:auto;
+}
+ #team span, #food p {
+     font-weight:bold;
+}
+/* Careers styles */
+ #careers h2 {
+     margin-bottom:2.8rem;
+}
+ #careers .container {
+    /* Size of box for each job. Box is centered with a border radius and box-shadow applied */
+     width:40rem;
+     height:10rem;
+     background-color:white;
+     box-shadow: 4px 8px 18px #595959;
+     margin:0 auto 2rem;
+     border-radius:8px;
+}
+ #careers img {
+    /*Img is padded and margined to a position that is aesthetically pleasing. It is also floated to the left */
+     padding-top:1.1rem;
+     margin-left:-1rem;
+     display:block;
+     width:auto;
+     float:left;
+}
+ #careers .container h2 {
+    /* h2 is aligned to the left, padding to the top by 1rem and aligned to the left */
+     color:black;
+     font-size:2rem;
+     text-align:left;
+     font-family:BebasNeue;
+     padding-top:1rem;
+     margin-bottom:0;
+}
+ #careers span {
+    /* Title for hourly wage is bolded and coloured */
+     font-weight:bold;
+     color:#e6284a;
+}
+ #careers p {
+     font-family:Maiandra-GD;
+}
+ #careers article{
+    /* Block of text in container is floated to the right but the text in it is aligned to the left A maximum width of 70% of the container is allocated to the article */
+     float:right;
+     text-align:left;
+     width:70% 
+}
+/* Contact Styles */
+ #contact .container {
+     height:auto;
+     width:80%;
+}
+ #contact form{
+     width:70%;
+     padding:1rem;
+     margin:0 auto;
+}
+ input[type=text], select, textarea {
+     width:100%;
+     padding: 12px;
+     border:none;
+     margin-bottom:2rem;
+     border-bottom: 1px solid white;
+     outline:none;
+     box-sizing: border-box;
+     resize: vertical;
+     background-color:transparent;
+}
+ #contact label {
+     color:white;
+     font-family:Maiandra-GD;
+     font-weight:bold;
+}
+ #contact button {
+     background:-webkit-linear-gradient(#f3511e, #e6284a);
+     border-radius:10px;
+     border:1px solid white;
+}
+ #contact button span {
+     font-family:BebasNeue;
+     font-size:1.5rem;
+     padding:2rem;
+     color:white;
+}
+ #contact .container {
+     margin:auto;
+}
+/* The Modal (background) */
+ .modal {
+     display: none;
+    /* Hidden by default */
+     position: fixed;
+    /* Stay in place */
+     z-index: 1;
+    /* Sit on top */
+     padding-top: 100px;
+    /* Location of the box */
+     left: 0;
+     top: 0;
+     width: 100%;
+    /* Full width */
+     height: 100%;
+    /* Full height */
+     overflow: auto;
+    /* Enable scroll if needed */
+     background-color: rgb(0,0,0);
+    /* Fallback color */
+     background-color: rgba(0,0,0,0.4);
+    /* Black w/ opacity */
+}
+/* Modal Content */
+ .modal-content {
+     position: relative;
+     background-color: #fefefe;
+     margin: auto;
+     padding: 0;
+     border: 1px solid #888;
+     width: 80%;
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+     -webkit-animation-name: animatetop;
+     -webkit-animation-duration: 0.4s;
+     animation-name: animatetop;
+     animation-duration: 0.4s 
+}
+/* Add Animation */
+ @-webkit-keyframes animatetop {
+     from {
+        top:-300px;
+         opacity:0
+    }
+     to {
+        top:0;
+         opacity:1
+    }
+}
+ @keyframes animatetop {
+     from {
+        top:-300px;
+         opacity:0
+    }
+     to {
+        top:0;
+         opacity:1
+    }
+}
+/* The Close Button */
+ .close {
+     color: white;
+     float: right;
+     font-size: 28px;
+     font-weight: bold;
+}
+ .close:hover, .close:focus {
+     color: #000;
+     text-decoration: none;
+     cursor: pointer;
+}
+ .modal-header {
+     padding: 2px 16px;
+     background-color: #e6284a;
+     color: white;
+}
+ .modal-body {
+    padding: 2px 16px;
+}
+/* media styles */
+ @media screen and (max-width: 600px) {
+     #aboutus p {
+         padding-left:2rem;
+         padding-right:2rem;
+    }
+}
+ @media screen and (max-width:640px) {
+     header .container img {
+         height:18.3rem;
+    }
+     header p {
+         font-size:2rem;
+    }
+     header .banner {
+         height:3.8em;
+    }
+     header .banner span {
+         font-size:2.8em;
+    }
+}
+ @media screen and (max-width: 700px) {
+     #careers .container {
+         width:24rem;
+         height:10.5rem;
+    }
+     #careers img {
+         width:6rem;
+         margin-left:-1.7rem;
+    }
+}
+ @media screen and (min-width: 1064px) {
+     #nav-icon{
+         display:none;
+    }
+}
+ @media screen and (max-width: 1064px) {
+     nav {
+         display:none;
+    }
+}
+ @media screen and (max-width: 800px) {
+     #aboutus .container img {
+         display:none;
+    }
+     #aboutus .container p{
+         font-size:1.7rem;
+    }
+     #awards .container {
+         grid-template-columns: auto;
+    }
+     nav i {
+         display:block;
+    }
+     #team .wrapper, #food .wrapper {
+         grid-template-columns: auto;
+    }
+     #team p, #food p {
+         text-align:center;
+         padding-left:0;
+    }
+}
+ @media screen and (max-width: 900px) and (min-width: 640px) {
+     header .container img {
+         height:27rem;
+    }
+     header p {
+         font-size:2.8rem;
+    }
+     header .banner {
+         height:4.5em;
+    }
+     header .banner span {
+         font-size:3.5em;
+    }
+}
+ @media screen and (max-width:1100px) and (min-width:800px) {
+     #team .wrapper, #food .wrapper {
+         grid-template-columns:auto auto;
+    }
+}
+ @media screen and (max-width:1100px) {
+     footer {
+         grid-template-areas: "footerh2 footerh2" "information information" "socialmedia copyright";
+    }
+     footer iframe {
+         display:none;
+    }
+     footer .information {
+         text-align:center;
+    }
+     footer .copyright p, footer .copyright span {
+         text-align:right;
+    }
+}
+ @media screen and (max-width:1200px) and (min-width: 600px) {
+     #aboutus .container img {
+         display:none;
+    }
+     #aboutus p {
+         padding-left:5rem;
+    }
+}
+ @media screen and (max-width:500px){
+     footer h2 {
+         font-size:4.8rem;
+    }
+}
+ @media print {
+     header,footer,section {
+         background-color:white;
+    }
+     p,button,span,h2,{
+         color:black;
+    }
+}
+ 
