@@ -1,0 +1,330 @@
+/* 
+Juve Cafe Stylesheet
+ */
+ html, body {
+    /* CSS Reset, overflow-x to prevent vertical scrolling */
+     width: 100%;
+     height: 100%;
+     margin: 0px;
+     padding: 0px;
+     overflow-x:hidden;
+}
+ header, section, footer {
+     margin: 0;
+     padding: 1px;
+}
+ header {
+    /* The image used */
+     background-image: url("img/headerbg.jpg");
+    /* Css code to make sure the header image fits the whole screen */
+     height: 105%;
+     min-width: 100%;
+     text-align: center;
+     display: block;
+    /* Center and scale the image nicely */
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+ header img {
+    /* Move the image to the middle of the screen */
+     display: inline-block;
+     margin: auto auto;
+     margin: 16%;
+     height: auto;
+     width: auto;
+	 
+	  /* Animation css */
+     -webkit-transition: all 0.7s ease;
+     -moz-transition: all 0.7s ease;
+     -o-transition: all 0.7s ease;
+     -ms-transition: all 0.7s ease;
+}
+ header img:hover {
+	transform: scale(1.2);
+}
+ nav a {
+    /* CSS to make the elements of the nav bar more appealing */
+     text-decoration: none;
+     color: white;
+     font-size: 2rem;
+     padding: 14px 10px;
+     font-family: Lobster;
+     font-weight: 900;
+     text-shadow: 2px 2px #333333;
+	 
+    /* Animation css */
+     -webkit-transition: all 0.7s ease;
+     -moz-transition: all 0.7s ease;
+     -o-transition: all 0.7s ease;
+     -ms-transition: all 0.7s ease;
+}
+ nav a:hover {
+    /* CSS code after an element of the nav bar is hovered over */
+     text-decoration: underline;
+     font-size: 2.4rem;
+}
+ nav {
+    /* Nav bar is stuck to the top of your screen as you scroll down with a slight gap to the top */
+     padding-top: 0.5rem;
+     top: 0;
+     position: fixed;
+     left: 50%;
+     transform: translate(-50%, 0);
+}
+ #aboutus {
+    /*Background image for aboutus section and aligning text to center */
+     background-image: url("img/bg.png");
+     text-align: center;
+}
+ #aboutus .container {
+    /* background for container in aboutus section, centering the container with a width of 70%,
+	adding a box shadow and forcing up the container into the header for aesthetics */
+     background-image: url("img/aboutusconbg.png");
+     width: 70%;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: -80px;
+     box-shadow: 5px 10px 18px #595959;
+}
+ #aboutus h1, #team h1, #menu h1, #careers h1 {
+    /* Styling for section titles with a dark grey color and beige underline */
+     font-family: Lobster;
+     font-size: 3.5rem;
+     color: #383838;
+     text-decoration: underline;
+     text-decoration-color: #f1c68e;
+     text-align:center;
+}
+ #aboutus p {
+    /* font size, centering paragraph and allowing a maximum with for the paragraph */
+     font-size: 2rem;
+     max-width: 50%;
+     margin: auto;
+}
+ #awardsint {
+    /* CSS to allow the awards background image to be centered, not reapting and scroll with the page */
+     text-align: center;
+     background-image: url("img/awardsbg.jpg");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-attachment: fixed;
+     overflow:hidden;
+}
+ #awardsint h1 {
+    /* H1 stylung with a shadow, size and color */
+     font-family: Lobster;
+     font-size: 3.5rem;
+     color: white;
+     text-shadow: 2px 2px black;
+}
+ #awardsint p {
+    /* Paragraph styling with font, shadow, size and color */
+     color: white;
+     font-size:1.8rem;
+     font-family:Verdana, Geneva, sans-serif;
+     text-shadow: 1px 1px black;
+}
+ #awardsint figure {
+    /* Centering the awards in the awards section */
+     margin:auto;
+}
+ #awardsint img {
+    /* Setting a size for the image, and adding a rounded edge to the image for aesthetic appeal */
+     width: 15rem;
+     height: 15rem;
+     margin: 0 2rem;
+     border: 6px hidden white;
+     border-radius: 26%;
+}
+ footer {
+    /* Background image for footer and alinging text to left */
+     background-image: url("img/bg.png");
+     text-align: left;
+}
+ footer aside {
+    /* Float the iframe to the right width a width of 64% of the container */
+     float:right;
+     width:64%;
+     margin:auto;
+     height:100%;
+}
+ footer iframe{
+    /* Iframe set to 100% as 64% of the footer has been allocated to the iframe in
+	the article css. a height is also allocated */
+     border:0;
+     width:100%;
+     height:560px;
+}
+ footer p {
+    /* Color of text in footer is set to black */
+     color: black;
+}
+ footer .container {
+    /* Cotainer is set to 70% of the footer, it is also forced up top with a
+	negative margin-top value. Box shadow is also applied */
+     margin: -2rem auto 1rem;
+     box-shadow: 5px 5px 14px #595959;
+     overflow: hidden;
+     background-image: url("img/aboutusconbg.png");
+     width: 70%;
+     height:auto;
+}
+ footer h2 {
+    /* Font-family, font-size, colour, text-align, and margin applied */
+     font-family: Lobster;
+     font-size: 3.5rem;
+     color: #383838;
+     text-align: center;
+     margin-top: 0.5rem;
+}
+ footer .wrapper {
+    /* 36% of footer allocated to the contact, phone/mail and copyright. Floated to the left */
+     width:36%;
+     float:left;
+}
+ .titleunderline {
+    /* Text-decoriation does not work with Lobster font h2 as a result a manual text-decoration was made */
+     width: 10rem;
+     height: 0.3rem;
+     background-color: #f1c68e;
+     margin: -3.5rem auto 0.7rem;
+}
+ footer .sm {
+    /* Text-aligned to the center */
+     text-align:center;
+}
+ footer .sm a {
+    /* Text-decoration, font-size and color, with margin applied */
+     color: black;
+     font-size: 2rem;
+     text-decoration: none;
+     margin: 0 0.2rem;
+	 
+    /* Animation css */
+     -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+     -o-transition: all 0.5s ease;
+     -ms-transition: all 0.5s ease;
+}
+ footer .sm a:hover, footer .phonemail a:hover {
+    /* Color applied when hovered */
+     color: #f1c68e;
+}
+ .phonemail a{
+    /* Text-decoration removed, with a font-size, weight, family and color. Padded to the left 2rem */
+     text-decoration:none;
+     padding-left:2rem;
+     font-size:1rem;
+     color:#337ab7;
+     font-family:Georgia;
+     font-weight:bold;
+}
+ footer .copyright a:visited {
+     color:#7f32b7;
+}
+ .phonemail i{
+    /* Icon set a font-size, color and padded to the right 0.3rem */
+     font-size:1.4rem;
+     padding-right:0.3rem;
+     color:black;
+}
+ .copyright a {
+    /* link set a font-weight, text-decoration removed and a black color */
+     font-weight:bold;
+     text-decoration:none;
+     color:black;
+	 
+    /* Animation css */
+     -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+     -o-transition: all 0.5s ease;
+     -ms-transition: all 0.5s ease;
+}
+ .copyright h3 {
+    /* h3 padded to the left, font family, weight ,size and text-shadow applied */
+     padding-left:2rem;
+     font-family:Lobster;
+     font-weight:200;
+     font-size:1.4rem;
+     text-shadow: 1px 1px 2px grey;
+}
+ .copyright {
+     padding-left:2.4rem;
+     font-size:1.2rem;
+}
+/* Start of meet the team and menu CSS */
+ #team, #menu {
+    /* Overflow is hidden so that the footer does not overflow into the sections */
+     overflow:hidden;
+}
+ #team .container, #menu .container {
+    /* Width of each container is set at 20% with a margin of 2rem on the top and a specific calculated margin 
+	at the left and right to ensure that the containers are centered. They are also floated to the left
+	to ensure the containers are side by side */
+     width:30%;
+     margin:2rem calc(10%/6) 0;
+     float:left;
+}
+ #team img, #menu img {
+    /* Images appear circular with a border-radius, they are also set at a certain size, 
+	centered and have a margin at the top */
+     display: block;
+     width: 15rem;
+     height: 15rem;
+     border-radius: 50%;
+     margin: 1rem auto 0;
+}
+ #team p, #menu p {
+    /* Font-size and font family applied to the paragraph. There is also a padding and margin to align 
+	the paragraphs to the images */
+     font-size: 0.9rem;
+     padding-left:6.5rem;
+     margin-top: 0.3rem;
+     font-family: Verdana;
+}
+ #team span, #menu span {
+    /* Name/food item is bolded to be more emphasised */
+     font-weight: 800;
+     font-size: 1.6rem;
+     font-family:Verdana;
+}
+/* Start of careers css */
+ #careers {
+    /* Background color for section */
+     background-color:#fcfcfc;
+}
+ #careers .wrapper {
+    /*To have a gap between footer and careers wrapper */
+     margin-bottom:4rem;
+}
+ #careers .container {
+    /* Size of box for each job. Box is centered with a border radius and box-shadow applied */
+     width:40rem;
+     height:10rem;
+     background-color:white;
+     box-shadow: 4px 8px 18px #595959;
+     margin:0 auto 2rem;
+     border-radius:8px;
+}
+ #careers img {
+    /*Img is padded and margined to a position that is aesthetically pleasing. It is also floated to the left */
+     padding-top:1.1rem;
+     margin-left:-1rem;
+     display:block;
+     width:auto;
+     float:left;
+}
+ #careers span {
+    /* Title for hourly wage is bolded and coloured */
+     font-weight:bold;
+     color:#ebaf60;
+}
+ #careers article{
+    /* Block of text in container is floated to the right but the text in it is aligned to the left 
+	A maximum width of 70% of the container is allocated to the article */
+     float:right;
+     text-align:left;
+     width:70% 
+}
